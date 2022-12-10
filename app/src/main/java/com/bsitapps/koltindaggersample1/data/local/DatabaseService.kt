@@ -9,4 +9,7 @@ class DatabaseService @Inject constructor(
     private var context: Context,
     private var databaseName: String,
     private var version: Int
-)
+) {
+    fun getDummy(): String = "DatabaseDummyValue"
+}
+

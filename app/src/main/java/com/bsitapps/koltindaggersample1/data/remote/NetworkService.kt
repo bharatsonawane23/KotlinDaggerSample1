@@ -8,4 +8,6 @@ import javax.inject.Singleton
 class NetworkService @Inject constructor(
     private var context: Context,
     private var apiKey: String
-)
+) {
+    fun getDummy(): String = "NetworkDummyValue"
+}
